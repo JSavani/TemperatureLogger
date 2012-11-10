@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WeatherObservations" Class="XmlDataInserttoDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SAVANI-PC\SQLEXPRESS;Initial Catalog=WeatherObservations;Integrated Security=True" SettingsObjectName="TemperatureLogger.Properties.Settings" SettingsPropertyName="WeatherObservationsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="NOAALOG.SensorReadings" Member="SensorReadings">
+    <Type Name="SensorReading">
+      <Column Name="Readingsid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="observation_time" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="temp_f" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="temp_c" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="relative_humidity" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="wind_mph" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="wind_kt" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="pressure_mb" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="pressure_in" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="dewpoint_f" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="dewpoint_c" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="windchill_f" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="windchill_c" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="visibility_mi" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
